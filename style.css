@@ -2,3 +2,19 @@ html
 {
     background-image: url(assets/wood_texture_by_angooy_d2ourin-fullview.jpg);
 }
+
+.flex-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 550px;
+    width: auto;
+}
+
+.mini-container
+{
+    display: flex;
+    flex-direction: row;
+}
