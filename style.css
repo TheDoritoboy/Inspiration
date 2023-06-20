@@ -1,6 +1,19 @@
 html 
 {
     background-image: url(assets/wood_texture_by_angooy_d2ourin-fullview.jpg);
+    font-family: 'Alfa Slab One', cursive;
+}
+h1
+{
+    text-align: center;
+    color: wheat;
+}
+
+img
+{
+    width: 35%;
+    height: auto;
+    margin-bottom: 1.5%;
 }
 
 .flex-container
