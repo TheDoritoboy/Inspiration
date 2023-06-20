@@ -14,7 +14,48 @@ img
 {
     width: 35%;
     height: auto;
-    margin-bottom: 1.5%;
+    margin-bottom: 2%;
+}
+
+button
+{
+    grid-area: e;
+    margin: 0 25px 0 25px;
+    border-radius: 0 10px 0 10px;
+    border: none;
+    background-color: chocolate;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.grid-container
+{
+    display: grid;
+    grid-template-areas:
+    "c e d"
+    "b e a "
+     ;
+}
+
+.grid-item1
+{
+    grid-area: c;
+    color: peru;
+}
+
+.grid-item2
+{
+    grid-area: d;
+    color: peru;
+}
+
+#chuck-cat
+{
+    grid-area: a;
+}
+
+#dog-breeds
+{
+    grid-area: b;
 }
 
 .flex-container
