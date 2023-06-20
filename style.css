@@ -2,6 +2,7 @@ html
 {
     background-image: url(assets/wood_texture_by_angooy_d2ourin-fullview.jpg);
     font-family: 'Alfa Slab One', cursive;
+    height: auto;
 }
 h1
 {
@@ -22,10 +23,9 @@ img
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    height: 550px;
+    height: auto;
     width: auto;
-    margin-top: 10%;
-
+    margin-top:10%;
 }
 
 .mini-container
