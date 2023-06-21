@@ -9,23 +9,25 @@
     <body>
         <h1>DOGS THAT INSPIRE YOU TO BE CHUCK NORRIS!</h1>
 <div class="flex-container">
-<img src="assets/dog.jpg" alt="pup">
+    <img src="assets/dog.jpg" alt="pup">
         <div class="mini-container">
-            <label for="dog-breeds">Breed</label> 
-    <select name="dog-breeds" id="dog-breeds"> 
+            <div class="grid-container">
+            <label class="grid-item1" for="dog-breeds">Breed:</label> 
+            <label class="grid-item2" for="chuck-cat">Inspiration Catagory:</label> 
+    <select class="grid-item" name="dog-breeds" id="dog-breeds"> 
         <option value="rigatoni">Rigatoni</option> 
         <option value="dave">Dave</option> 
         <option value="pumpernickel">Pumpernickel</option> 
         <option value="reeses">Reeses</option> 
     </select>
-  <button>Inspire Me!</button>
-  <label for="chuck-cat">Choose a dog name:</label> 
-  <select name="chuck-cat" id="chuck-cat"> 
+  <button class="grid-item">Inspire Me!</button>
+  <select class="grid-item" name="chuck-cat" id="chuck-cat"> 
       <option value="rigatoni">Rigatoni</option> 
       <option value="dave">Dave</option> 
       <option value="pumpernickel">Pumpernickel</option> 
       <option value="reeses">Reeses</option> 
   </select>
+            </div>
         </div>
 </div>
     </body>
