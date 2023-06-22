@@ -1,24 +1,26 @@
 //https://dog.ceo/api/breeds/list/all
 //https://dog.ceo/api/breed/Affenpinscher/images/random
-//not quite right it's a concept
-const userAction = async () => 
+//allows drop down menu to be uptodate if new breeds are added to the API
+window.onload = async function dogAsync()
 {
-    const breedLoc = document.getElementById("dog-breeds");
-    const response = await fetch('https://dog.ceo/api/breeds/list/all');
+    const response = await fetch('https://dog.ceo/api/breeds/list/all'); //get API http response (for the breeds)
     const myJson = await response.json(); //extract JSON from the http response
-    // do something with myJson
-    let breedArray = JSON.parse(myJson);
-    
-    breedArray.array.forEach(element => 
-    {
-        i+=0
-        elem = document.createElement("option");
-        elem.id = 'myID' + i;
-        elem.innerHTML = element;
-        breedLoc.insertAdjacentElement('afterbegin',elem,document.body.childNodes[0]);
-       // < value="reeses">Reeses</option> 
-    });
+    const breedArray = JSON.parse(JSON.stringify(myJson.message));
 
+    const options = breedArray.map(e=>{return `<option value="${e}">${e}</option>`}) // create option tag to go into the select
+    document.getElementById("dog-breeds").innerHTML = options; //insert new option into select
+}
+
+//https://api.chucknorris.io/
+//https://api.chucknorris.io/jokes/categories
+window.onload = async function chuckAsync()
+{
+    const response = await fetch('https://api.chucknorris.io/jokes/categories'); //get API http response (for the breeds)
+    const myJson = await response.json(); //extract JSON from the http response
+    const ChuckArray = JSON.parse(JSON.stringify(myJson));
+
+    const options = ChuckArray.map(e=>{return `<option value="${e}">${e}</option>`}) // create option tag to go into the select
+    document.getElementById("chuck-cat").innerHTML = options; //insert new option into select
 }
 
 
