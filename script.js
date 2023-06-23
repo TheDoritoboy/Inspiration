@@ -22,10 +22,13 @@ window.onload = async function dropDownAsync()
     async function inspirationData () {
     const dogInput = "https://dog.ceo/api/breed/" + document.getElementById("dog-breeds").value + "/images/random";
     const chuckInput = "https://api.chucknorris.io/jokes/random?category=" + document.getElementById("chuck-cat").value;
+
     const dogImgSrc = await fetch(dogInput);
     const myJsonDog = await dogImgSrc.json();
+    const ChuckArray = JSON.stringify(myJsonDog.message); 
     const chuckJokeSrc = await fetch(chuckInput);
-    const myJsonChuck = await dchuckJokeSrc.json();
+    const myJsonChuck = await chuckJokeSrc.json();
+    const ChuckA = JSON.stringify(myJsonChuck.value);
 }
 
 function inspirationButton () {
