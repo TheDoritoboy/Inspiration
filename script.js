@@ -25,10 +25,10 @@ window.onload = async function dropDownAsync()
 
     const dogImgSrc = await fetch(dogInput);
     const myJsonDog = await dogImgSrc.json();
-    const ChuckArray = JSON.stringify(myJsonDog.message); 
+    const dog = JSON.stringify(myJsonDog.message); 
     const chuckJokeSrc = await fetch(chuckInput);
     const myJsonChuck = await chuckJokeSrc.json();
-    const ChuckA = JSON.stringify(myJsonChuck.value);
+    const Chuck = JSON.stringify(myJsonChuck.value);
 }
 
 function inspirationButton () {
