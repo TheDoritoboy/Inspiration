@@ -28,13 +28,13 @@ window.onload = async function dropDownAsync()
     const dog = JSON.stringify(myJsonDog.message); 
     const chuckJokeSrc = await fetch(chuckInput);
     const myJsonChuck = await chuckJokeSrc.json();
-    const Chuck = JSON.stringify(myJsonChuck.value);
+    const chuck = JSON.stringify(myJsonChuck.value);
+    const goDog = document.getElementById("pup").setAttribute("src", dog);
+    const goChuck = document.getElementById("quote").innerHTML(chuck);
+    console.log(chuck, dog);
 }
 
-function inspirationButton () {
-    const dogImg = document.getElementById("pup").setAttribute(src , inspirationData.dogImgSrc);
-    
-}
+
 
 
   
