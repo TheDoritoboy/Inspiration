@@ -19,14 +19,17 @@ window.onload = async function dropDownAsync()
 
 }
 
-function inspirationButton () {
+function inspirationData () {
     const dogInput = document.getElementById("dog-breeds").value;
     const chuckInput = document.getElementById("chuck-cat").value;
-    const dogImg = "https://dog.ceo/api/breed/" + dogInput + "/images/random";
-    const chuckJoke = "https://api.chucknorris.io/jokes/random?category=" + chuckInput;
-    console.log(dogImg, chuckJoke);
+    const dogImgSrc = fetch("https://dog.ceo/api/breed/" + dogInput + "/images/random");
+    const chuckJokeSrc = fetch("https://api.chucknorris.io/jokes/random?category=" + chuckInput);
 }
 
+function inspirationButton () {
+    const dogImg = document.getElementById("pup").setAttribute(src , dogImgSrc);
+    
+}
 
 
   
