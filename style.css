@@ -12,8 +12,8 @@ h1
 
 img
 {
-    width: 35%;
-    height: auto;
+    height: 400px;
+    width: auto;
     margin-bottom: 2%;
 }
 
@@ -25,6 +25,22 @@ button
     border: none;
     background-color: chocolate;
     font-family: 'Alfa Slab One', cursive;
+}
+
+#poster
+{
+position: relative;
+text-align: center;
+color: black;
+text-shadow: 1px 2px 0 wheat;
+}
+
+#quote
+{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .grid-container
