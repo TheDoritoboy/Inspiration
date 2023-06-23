@@ -25,12 +25,14 @@ window.onload = async function dropDownAsync()
 
     const dogImgSrc = await fetch(dogInput);
     const myJsonDog = await dogImgSrc.json();
-    const dog = JSON.stringify(myJsonDog.message); 
+    const dog = JSON.stringify(myJsonDog.message).replace(/['"]+/g, ''); 
+
     const chuckJokeSrc = await fetch(chuckInput);
     const myJsonChuck = await chuckJokeSrc.json();
     const chuck = JSON.stringify(myJsonChuck.value);
-    const goDog = document.getElementById("pup").setAttribute("src", dog);
-    const goChuck = document.getElementById("quote").innerHTML(chuck);
+
+    document.getElementById("pup").setAttribute("src", dog);
+    document.getElementById("quote").innerHTML = chuck;
     console.log(chuck, dog);
 }
 
