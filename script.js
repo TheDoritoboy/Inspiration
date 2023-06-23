@@ -23,7 +23,7 @@ function inspirationButton () {
     const dogInput = document.getElementById("dog-breeds").textContent;
     const chuckInput = document.getElementById("chuck-cat").textContent;
     const dogImg = "https://dog.ceo/api/breed/" + dogInput + "/images/random";
-    const chuckJoke = "https://api.chucknorris.io/jokes/random?category=" + chuckInput + "";
+    const chuckJoke = "https://api.chucknorris.io/jokes/random?category=" + chuckInput;
     console.log(dogImg, chuckJoke);
 }
 
