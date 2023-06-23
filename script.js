@@ -19,7 +19,13 @@ window.onload = async function dropDownAsync()
 
 }
 
-
+function inspirationButton () {
+    const dogInput = document.getElementById("grid-item1").textContent;
+    const chuckInput = document.getElementById("grid-item2").textContent;
+    const dogImg = "https://dog.ceo/api/breed/{dogInput}/images/random"
+    const chuckJoke = "https://api.chucknorris.io/jokes/random?category={chuckInput}"
+    console.log(dogImg);
+}
 
 
 
